@@ -6,7 +6,7 @@ router.get("/",async(req,res)=>{
     let data = await userController.getAll();
    res.send(data);
 })
-
+//push req testing
 router.post("/",async(req,res)=>{
     let data = await userController.insertUser(req.body);
     res.send(data);
